@@ -28,11 +28,25 @@
     margin: 0;
     font-size: 2em;
   }
+  .infosec-statement p {
+    margin-top: 10px;
+    font-size: 1em;
+  }
 </style>
+<script>
+function updateDateTime() {
+  var now = new Date();
+  var dateString = now.toISOString();
+  var dateTimeString = dateString.replace('T', ' ').replace('Z', '');
+  document.getElementById('datetime').textContent = dateTimeString;
+  setTimeout(updateDateTime, 1); // Update the time every millisecond
+}
+</script>
 </head>
-<body>
+<body onload="updateDateTime()">
 <div class="infosec-statement">
   <h1>This site has been protected by Infosec Team</h1>
+  <p id="datetime"></p>
 </div>
 </body>
 </html>
