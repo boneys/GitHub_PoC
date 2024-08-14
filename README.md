@@ -1,1 +1,1 @@
-# This site has been protect by InFosec team to protect the domain from Takeover
+# This site has been protect by Infosec team to protect the domain from Takeover
